@@ -7,7 +7,7 @@ title: ContiHydro
 subtitle: ''
 description: ''
 keywords:
-author: Jerrt Lee
+author: ContiHydro
 language: en
 timezone: ''
 
@@ -101,4 +101,7 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/CJ10110425/CJ10110425.github.io.git
+  branch: main
+  message: update loading and bg
