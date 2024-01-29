@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       : Number(saveToLocal.get('translate-chn-cht'))
   let translateButtonObject
   const isSnackbar = snackbarData !== undefined
-
+  
   function setLang () {
     document.documentElement.lang = targetEncoding === 1 ? 'zh-TW' : 'zh-CN'
   }
@@ -120,3 +120,4 @@ document.addEventListener('DOMContentLoaded', function () {
   translateInitialization()
   document.addEventListener('pjax:complete', translateInitialization)
 })
+
