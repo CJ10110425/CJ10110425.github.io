@@ -19,4 +19,11 @@ p {
 .text {
 font-size: 18px; /* 根据需要调整字体大小 */
 }
-  
+
+.water-storage {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
