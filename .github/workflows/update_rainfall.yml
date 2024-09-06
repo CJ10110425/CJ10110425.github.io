@@ -1,10 +1,13 @@
 name: Update Rainfall and Deploy Hexo
 
-# 每小時執行一次
+# 每小時執行一次 + 當代碼推送到 autodeploy 分支時觸發
 on:
   schedule:
     - cron: '0 * * * *'  # 每整點觸發
-  workflow_dispatch:
+  push:  # 當推送到 autodeploy 分支時觸發
+    branches:
+      - autodeploy  # 修改成你的部署分支
+  workflow_dispatch:  # 手動觸發
 
 jobs:
   update_and_deploy:
