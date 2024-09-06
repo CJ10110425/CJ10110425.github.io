@@ -3,7 +3,7 @@ name: Update Rainfall and Deploy Hexo
 # 每小時執行一次 + 當代碼推送到 autodeploy 分支時觸發
 on:
   schedule:
-    - cron: '0 * * * *'  # 每整點觸發
+    - cron: '55 * * * *'  # 每整點觸發
   push:  # 當推送到 autodeploy 分支時觸發
     branches:
       - autodeploy  # 修改成你的部署分支
@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Python script to update water volume
       run: |
-        python your_script.py  # 這裡替換成你的 Python 腳本名稱
+        scraper.py  # 這裡替換成你的 Python 腳本名稱
 
     - name: Install Hexo
       run: |
