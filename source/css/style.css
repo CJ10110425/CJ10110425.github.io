@@ -1,0 +1,29 @@
+/* 调整图片大小 */
+.medium-zoom-image {
+    width: 800px;
+    height: auto;
+  }
+  
+  /* 对齐图片居中 */
+.medium-zoom-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+/* 选择所有段落和正文内容，并增加字体大小 */
+p {
+    font-size: 18px; /* 根据需要调整字体大小 */
+}
+
+/* 如果需要对特定class为text的元素进行更改，可以这样写 */
+.text {
+font-size: 18px; /* 根据需要调整字体大小 */
+}
+
+.water-storage {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
