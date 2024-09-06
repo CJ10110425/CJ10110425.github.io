@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Python script to update water volume
       run: |
-        scraper.py  # 這裡替換成你的 Python 腳本名稱
+        python scraper.py  # 這裡替換成你的 Python 腳本名稱
 
     - name: Install Hexo
       run: |
