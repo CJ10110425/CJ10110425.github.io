@@ -2,8 +2,11 @@ name: Update Rainfall and Deploy Hexo
 
 on:
   schedule:
-    - cron: '55 * * * *'  # 每整點觸發
-  workflow_dispatch:  # 手動觸發
+    - cron: '55 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # 給 GITHUB_TOKEN 寫入權限
 
 jobs:
   update_and_deploy:
@@ -24,19 +27,18 @@ jobs:
 
     - name: Run Python script to update water volume
       run: |
-        python scraper.py  # 替換成你的 Python 腳本名稱
+        python scraper.py
 
-    # 提交更新
     - name: Configure git
       run: |
-        git config --global user.name "Your GitHub Username"
-        git config --global user.email "your-email@example.com"
+        git config --global user.name "CJ10110425"
+        git config --global user.email "ze0966747312@gmail.com"
 
     - name: Commit and push changes
       run: |
-        git add index.html  # 你希望提交的文件
+        git add index.html
         git commit -m "Update water volume in index.html"
-        git push origin main  # 提交回 main 分支
+        git push origin main
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
