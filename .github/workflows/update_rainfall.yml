@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install requests pyyaml
+        python -m pip install requests pyyaml beautifulsoup4
 
     - name: Run Python script to update water volume
       run: |
