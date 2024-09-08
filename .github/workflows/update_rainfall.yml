@@ -36,9 +36,10 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git add index.html
+        git add .
         git commit -m "Update water volume in index.html"
         git push origin main
-
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
