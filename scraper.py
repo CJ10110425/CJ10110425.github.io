@@ -84,6 +84,15 @@ subtitle = soup.find('span', id='subtitle')
 if subtitle:
     subtitle.string = f"目前存水量：{water_percentage}%"
 
+# 找到 JavaScript 中的 typedJSFn.init 並更新
+script_tag = soup.find('script', text=lambda t: 'typedJSFn.init' in t if t else False)
+if script_tag:
+    new_script_content = script_tag.string.replace(
+        '"目前存水量：10%"', 
+        f'"目前存水量：{water_percentage}%"'
+    )
+    script_tag.string = new_script_content
+
 # 將更新後的 HTML 寫回文件
 with open(html_file_path, 'w', encoding='utf-8') as file:
     file.write(str(soup))
