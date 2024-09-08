@@ -1,6 +1,5 @@
 name: Update Rainfall and Deploy Hexo
 
-# 每小時執行一次 + 當代碼推送到 autodeploy 分支時觸發
 on:
   schedule:
     - cron: '55 * * * *'  # 每整點觸發
@@ -21,16 +20,23 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install requests pyyaml beautifulsoup4 
-
-    - name: List files in current directory
-      run: |
-        ls -R
-
+        python -m pip install requests pyyaml
 
     - name: Run Python script to update water volume
       run: |
-        python scraper.py  # 這裡替換成你的 Python 腳本名稱
+        python scraper.py  # 替換成你的 Python 腳本名稱
+
+    # 提交更新
+    - name: Configure git
+      run: |
+        git config --global user.name "Your GitHub Username"
+        git config --global user.email "your-email@example.com"
+
+    - name: Commit and push changes
+      run: |
+        git add index.html  # 你希望提交的文件
+        git commit -m "Update water volume in index.html"
+        git push origin main  # 提交回 main 分支
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
