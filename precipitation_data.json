@@ -360,6 +360,10 @@
         {
             "date": "2024-09-12T17:50:00+08:00",
             "precipitation_past1hr": 0.0
+        },
+        {
+            "date": "2024-09-12T18:50:00+08:00",
+            "precipitation_past1hr": 0.0
         }
     ]
 }
