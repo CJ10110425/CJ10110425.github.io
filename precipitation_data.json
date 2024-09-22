@@ -1,5 +1,5 @@
 {
-    "total_precipitation": 136.75,
+    "total_precipitation": 137.25,
     "data": [
         {
             "date": "2024-09-08T13:40:00+08:00",
@@ -1240,6 +1240,10 @@
         {
             "date": "2024-09-22T06:50:00+08:00",
             "precipitation_past1hr": 2.5
+        },
+        {
+            "date": "2024-09-22T07:50:00+08:00",
+            "precipitation_past1hr": 0.5
         }
     ]
 }
