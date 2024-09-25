@@ -1568,6 +1568,10 @@
         {
             "date": "2024-09-25T21:00:00+08:00",
             "precipitation_past1hr": 0.0
+        },
+        {
+            "date": "2024-09-25T21:50:00+08:00",
+            "precipitation_past1hr": 0.0
         }
     ]
 }
