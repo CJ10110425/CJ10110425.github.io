@@ -2812,6 +2812,10 @@
         {
             "date": "2024-10-09T10:00:00+08:00",
             "precipitation_past1hr": 0.5
+        },
+        {
+            "date": "2024-10-09T11:00:00+08:00",
+            "precipitation_past1hr": 0.0
         }
     ]
 }
