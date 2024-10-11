@@ -2,6 +2,7 @@ import json
 import requests
 import os
 from bs4 import BeautifulSoup
+import re
 
 # API 端點及參數
 url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0002-001'
@@ -100,12 +101,13 @@ if subtitle:
     subtitle.string = f"目前存水量：{water_percentage}%"
 
 # 找到 JavaScript 中的 typedJSFn.init 並更新
-script_tag = soup.find('script', text=lambda t: 'typedJSFn.init' in t if t else False)
+script_tag = soup.find('script', string=lambda s: 'typedJSFn.init' in s if s else False)
 if script_tag:
     # 使用正則表達式來更新 "目前存水量" 的百分比顯示
-    updated_script = script_tag.string.replace(
-        '"目前存水量：50%"', 
-        f'"目前存水量：{water_percentage}%"'
+    updated_script = re.sub(
+        r'"目前存水量：\d+(\.\d+)?%"', 
+        f'"目前存水量：{water_percentage}%"',
+        script_tag.string
     )
     script_tag.string = updated_script
 
