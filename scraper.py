@@ -13,6 +13,13 @@ params = {
     'StationId': 'C0D660'  # 替換成你要查詢的測站ID
 }
 
+# 儲水效率和蒸發係數
+STORAGE_EFFICIENCY = 0.95
+EVAPORATION_RATE = 0.95
+
+# 儲水池最大容量（毫米）
+MAX_CAPACITY = 100.0
+
 # 發送 API 請求
 response = requests.get(url, params=params)
 data = response.json()
@@ -27,19 +34,30 @@ if os.path.exists(file_path):
         precipitation_data = json.load(file)
 else:
     precipitation_data = {
-        "total_precipitation": 4.25,  # 初始化累加的降雨量
+        "total_precipitation": 10.0,  # 初始化水庫儲水量（毫米）
         "data": []  # 用來存儲每次的降雨量數據
     }
 
-# 累加之前的降雨量
-previous_total = precipitation_data["total_precipitation"]
-new_total = previous_total + precipitation_past1hr
+# 獲取前一天的儲水量
+previous_storage = precipitation_data["total_precipitation"]
 
-# 更新 precipitation_data 的總降雨量和每次的降雨記錄
-precipitation_data["total_precipitation"] = new_total
+# 計算新儲水量
+if precipitation_past1hr == 0.0:
+    # 如果沒有降雨，考慮蒸發效應
+    new_storage = previous_storage * EVAPORATION_RATE
+else:
+    # 如果有降雨，考慮儲水效率和蒸發效應
+    new_storage = previous_storage * EVAPORATION_RATE + precipitation_past1hr * STORAGE_EFFICIENCY
+
+# 確保儲水量不超過水庫最大容量
+new_storage = min(new_storage, MAX_CAPACITY)
+
+# 更新 precipitation_data 的儲水量和每次的降雨記錄
+precipitation_data["total_precipitation"] = new_storage
 precipitation_data["data"].append({
     'date': data['records']['Station'][0]['ObsTime']['DateTime'],
-    'precipitation_past1hr': precipitation_past1hr
+    'precipitation_past1hr': precipitation_past1hr,
+    'storage': new_storage
 })
 
 # 將數據寫回 JSON 文件
@@ -47,13 +65,10 @@ with open(file_path, 'w', encoding='utf-8') as file:
     json.dump(precipitation_data, file, indent=4, ensure_ascii=False)
 
 print(f"已更新 Past1hr 降雨量：{precipitation_past1hr} 毫米")
-print(f"累計降雨量：{new_total} 毫米")
-
-# 儲水池最大容量：100毫米
-max_capacity = 100.0
+print(f"目前水庫儲水量：{new_storage} 毫米")
 
 # 計算儲水百分比
-water_percentage = (new_total / max_capacity) * 100
+water_percentage = (new_storage / MAX_CAPACITY) * 100
 water_percentage = min(water_percentage, 100.0)  # 確保百分比不超過 100%
 
 print(f"目前儲水趴數：{water_percentage}%")
@@ -87,11 +102,12 @@ if subtitle:
 # 找到 JavaScript 中的 typedJSFn.init 並更新
 script_tag = soup.find('script', text=lambda t: 'typedJSFn.init' in t if t else False)
 if script_tag:
-    new_script_content = script_tag.string.replace(
-        '"目前存水量：10%"', 
+    # 使用正則表達式來更新 "目前存水量" 的百分比顯示
+    updated_script = script_tag.string.replace(
+        '"目前存水量：50%"', 
         f'"目前存水量：{water_percentage}%"'
     )
-    script_tag.string = new_script_content
+    script_tag.string = updated_script
 
 # 將更新後的 HTML 寫回文件
 with open(html_file_path, 'w', encoding='utf-8') as file:

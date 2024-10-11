@@ -1,37 +1,30 @@
 {
-    "total_precipitation": 213.75,
+    "total_precipitation": 95.0,
     "data": [
         {
-            "date": "2024-10-11T01:50:00+08:00",
-            "precipitation_past1hr": 0.0
+            "date": "2024-10-11T11:20:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 9.5
         },
         {
-            "date": "2024-10-11T02:50:00+08:00",
-            "precipitation_past1hr": 0.0
+            "date": "2024-10-11T11:20:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 9.025
         },
         {
-            "date": "2024-10-11T03:50:00+08:00",
-            "precipitation_past1hr": 0.0
+            "date": "2024-10-11T11:20:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 8.57375
         },
         {
-            "date": "2024-10-11T04:50:00+08:00",
-            "precipitation_past1hr": 0.0
+            "date": "2024-10-11T11:20:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 100
         },
         {
-            "date": "2024-10-11T05:50:00+08:00",
-            "precipitation_past1hr": 0.0
-        },
-        {
-            "date": "2024-10-11T06:50:00+08:00",
-            "precipitation_past1hr": 0.0
-        },
-        {
-            "date": "2024-10-11T07:50:00+08:00",
-            "precipitation_past1hr": 0.0
-        },
-        {
-            "date": "2024-10-11T10:00:00+08:00",
-            "precipitation_past1hr": 0.0
+            "date": "2024-10-11T11:30:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 95.0
         }
     ]
 }
