@@ -1,5 +1,5 @@
 {
-    "total_precipitation": 72.42255786297484,
+    "total_precipitation": 71.6983322843451,
     "data": [
         {
             "date": "2024-10-11T11:20:00+08:00",
@@ -160,6 +160,11 @@
             "date": "2024-10-12T15:50:00+08:00",
             "precipitation_past1hr": 0.0,
             "storage": 72.42255786297484
+        },
+        {
+            "date": "2024-10-12T16:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 71.6983322843451
         }
     ]
 }
