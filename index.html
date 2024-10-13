@@ -394,7 +394,7 @@ document.body.addEventListener('input', POWERMODE);
       document.addEventListener('DOMContentLoaded', function () {
         const ctx = document.getElementById('rainfallChart').getContext('2d');
 
-        const data = {"labels": ["2024-10-08", "2024-10-09", "2024-10-10", "2024-10-11", "2024-10-12"], "datasets": [{"label": "Rainfall (mm)", "data": [0.0, 0.0, 0.0, 0.0, 0.0], "borderColor": "#004aad", "backgroundColor": "#004aad", "pointBackgroundColor": "#004aad", "pointBorderColor": "#004aad", "fill": false, "tension": 0.2, "yAxisID": "y"}, {"label": "Reservoir Water Level (%)", "data": [100.0, 95.0, 90.25, 85.7375, 81.45062499999999], "borderColor": "#FFD700", "backgroundColor": "#FFD700", "pointBackgroundColor": "#FFD700", "pointBorderColor": "#FFD700", "fill": false, "tension": 0.2, "yAxisID": "y1"}]};
+        const data = {"labels": ["2024-10-09", "2024-10-10", "2024-10-11", "2024-10-12", "2024-10-13"], "datasets": [{"label": "Rainfall (mm)", "data": [0.0, 0.0, 0.0, 0.0, 0.0], "borderColor": "#004aad", "backgroundColor": "#004aad", "pointBackgroundColor": "#004aad", "pointBorderColor": "#004aad", "fill": false, "tension": 0.2, "yAxisID": "y"}, {"label": "Reservoir Water Level (%)", "data": [95.0, 90.25, 85.7375, 81.45062499999999, 77.37809374999999], "borderColor": "#FFD700", "backgroundColor": "#FFD700", "pointBackgroundColor": "#FFD700", "pointBorderColor": "#FFD700", "fill": false, "tension": 0.2, "yAxisID": "y1"}]};
 
         // 預設為折線圖
         let currentChartType = 'line';
