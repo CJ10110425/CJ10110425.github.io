@@ -15,8 +15,8 @@ params = {
 }
 
 # 儲水效率和蒸發係數
-STORAGE_EFFICIENCY = 0.99
-EVAPORATION_RATE = 0.99
+STORAGE_EFFICIENCY = 0.95
+EVAPORATION_RATE = 0.9978651
 
 # 儲水池最大容量（毫米）
 MAX_CAPACITY = 100.0
@@ -71,6 +71,7 @@ print(f"目前水庫儲水量：{new_storage} 毫米")
 # 計算儲水百分比
 water_percentage = (new_storage / MAX_CAPACITY) * 100
 water_percentage = min(water_percentage, 100.0)  # 確保百分比不超過 100%
+water_percentage = round(water_percentage, 2)  # 取小數點後兩位
 
 print(f"目前儲水趴數：{water_percentage}%")
 

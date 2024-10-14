@@ -29,7 +29,7 @@ def fetch_data():
     response = requests.get(RAIN_DATA_URL, params=params)
     if response.status_code == 200:
         data = response.json()
-        return float(data['records']['Station'][0]['RainfallElement']['Past24hr']['Precipitation'])
+        return float(data['records']['Station'][0]['RainfallElement']['Past3days']['Precipitation'])
     else:
         print(f"Failed to fetch data from {RAIN_DATA_URL}")
         return None
