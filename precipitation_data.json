@@ -1,5 +1,5 @@
 {
-    "total_precipitation": 95.0,
+    "total_precipitation": 47.48451784042391,
     "data": [
         {
             "date": "2024-10-11T11:20:00+08:00",
@@ -25,6 +25,351 @@
             "date": "2024-10-11T11:30:00+08:00",
             "precipitation_past1hr": 0.0,
             "storage": 95.0
+        },
+        {
+            "date": "2024-10-11T12:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 94.05
+        },
+        {
+            "date": "2024-10-11T13:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 93.1095
+        },
+        {
+            "date": "2024-10-11T14:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 92.178405
+        },
+        {
+            "date": "2024-10-11T15:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 91.25662095
+        },
+        {
+            "date": "2024-10-11T16:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 90.3440547405
+        },
+        {
+            "date": "2024-10-11T17:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 89.440614193095
+        },
+        {
+            "date": "2024-10-11T18:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 88.54620805116404
+        },
+        {
+            "date": "2024-10-11T19:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 87.6607459706524
+        },
+        {
+            "date": "2024-10-11T21:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 86.78413851094588
+        },
+        {
+            "date": "2024-10-11T21:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 85.91629712583642
+        },
+        {
+            "date": "2024-10-11T22:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 85.05713415457805
+        },
+        {
+            "date": "2024-10-11T23:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 84.20656281303226
+        },
+        {
+            "date": "2024-10-12T00:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 83.36449718490194
+        },
+        {
+            "date": "2024-10-12T01:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 82.53085221305291
+        },
+        {
+            "date": "2024-10-12T02:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 81.70554369092238
+        },
+        {
+            "date": "2024-10-12T03:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 80.88848825401315
+        },
+        {
+            "date": "2024-10-12T04:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 80.07960337147303
+        },
+        {
+            "date": "2024-10-12T05:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 79.2788073377583
+        },
+        {
+            "date": "2024-10-12T06:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 78.48601926438072
+        },
+        {
+            "date": "2024-10-12T07:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 77.70115907173691
+        },
+        {
+            "date": "2024-10-12T09:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 76.92414748101955
+        },
+        {
+            "date": "2024-10-12T11:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 76.15490600620934
+        },
+        {
+            "date": "2024-10-12T11:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 75.39335694614725
+        },
+        {
+            "date": "2024-10-12T12:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 74.63942337668578
+        },
+        {
+            "date": "2024-10-12T13:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 73.89302914291892
+        },
+        {
+            "date": "2024-10-12T14:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 73.15409885148974
+        },
+        {
+            "date": "2024-10-12T15:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 72.42255786297484
+        },
+        {
+            "date": "2024-10-12T16:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 71.6983322843451
+        },
+        {
+            "date": "2024-10-12T17:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 70.98134896150165
+        },
+        {
+            "date": "2024-10-12T18:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 70.27153547188664
+        },
+        {
+            "date": "2024-10-12T19:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 69.56882011716777
+        },
+        {
+            "date": "2024-10-12T21:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 68.8731319159961
+        },
+        {
+            "date": "2024-10-12T21:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 68.18440059683614
+        },
+        {
+            "date": "2024-10-12T22:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 67.50255659086778
+        },
+        {
+            "date": "2024-10-12T23:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 66.8275310249591
+        },
+        {
+            "date": "2024-10-13T00:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 66.1592557147095
+        },
+        {
+            "date": "2024-10-13T01:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 65.4976631575624
+        },
+        {
+            "date": "2024-10-13T02:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 64.84268652598678
+        },
+        {
+            "date": "2024-10-13T03:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 64.19425966072691
+        },
+        {
+            "date": "2024-10-13T04:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 63.55231706411964
+        },
+        {
+            "date": "2024-10-13T05:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 62.91679389347844
+        },
+        {
+            "date": "2024-10-13T06:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 62.28762595454366
+        },
+        {
+            "date": "2024-10-13T07:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 61.66474969499822
+        },
+        {
+            "date": "2024-10-13T10:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 61.04810219804824
+        },
+        {
+            "date": "2024-10-13T11:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 60.43762117606776
+        },
+        {
+            "date": "2024-10-13T11:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 59.83324496430708
+        },
+        {
+            "date": "2024-10-13T12:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 59.234912514664
+        },
+        {
+            "date": "2024-10-13T13:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 58.64256338951736
+        },
+        {
+            "date": "2024-10-13T14:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 58.05613775562219
+        },
+        {
+            "date": "2024-10-13T15:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 57.475576378065966
+        },
+        {
+            "date": "2024-10-13T16:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 56.90082061428531
+        },
+        {
+            "date": "2024-10-13T17:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 56.331812408142454
+        },
+        {
+            "date": "2024-10-13T18:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 55.76849428406103
+        },
+        {
+            "date": "2024-10-13T19:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 55.21080934122042
+        },
+        {
+            "date": "2024-10-13T21:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 54.65870124780822
+        },
+        {
+            "date": "2024-10-13T21:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 54.11211423533013
+        },
+        {
+            "date": "2024-10-13T22:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 53.57099309297683
+        },
+        {
+            "date": "2024-10-13T23:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 53.03528316204706
+        },
+        {
+            "date": "2024-10-14T00:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 52.50493033042659
+        },
+        {
+            "date": "2024-10-14T01:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 51.979881027122325
+        },
+        {
+            "date": "2024-10-14T02:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 51.4600822168511
+        },
+        {
+            "date": "2024-10-14T03:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 50.94548139468259
+        },
+        {
+            "date": "2024-10-14T04:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 50.43602658073576
+        },
+        {
+            "date": "2024-10-14T05:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 49.93166631492841
+        },
+        {
+            "date": "2024-10-14T06:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 49.43234965177912
+        },
+        {
+            "date": "2024-10-14T07:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 48.938026155261326
+        },
+        {
+            "date": "2024-10-14T10:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 48.448645893708715
+        },
+        {
+            "date": "2024-10-14T11:00:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 47.96415943477163
+        },
+        {
+            "date": "2024-10-14T11:50:00+08:00",
+            "precipitation_past1hr": 0.0,
+            "storage": 47.48451784042391
         }
     ]
 }
