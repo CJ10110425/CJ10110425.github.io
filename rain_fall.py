@@ -23,7 +23,7 @@ STORAGE_EFFICIENCY = 0.95
 EVAPORATION_RATE = 0.95
 # 水庫總容量（公斤）
 TOTAL_CAPACITY = 100
-
+BASE_DATE = datetime.date(2024, 1, 1)
 # 從網路上抓取資料
 def fetch_data():
     response = requests.get(RAIN_DATA_URL, params=params)
