@@ -34,8 +34,8 @@ jobs:
           echo "Today is the update day."
         else
           echo "Today is not the update day, skipping."
-          exit 0
-        fi
+          exit 1
+      continue-on-error: true
 
     - name: Run Python script to update water volume
       run: |
