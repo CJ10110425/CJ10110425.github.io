@@ -2,7 +2,7 @@ name: Update Rainfall chart and Deploy Hexo
 
 on:
   schedule:
-  - cron: '0 23 * * *'  # 每天 23:00 運行
+  - cron: '0 23 * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,18 +24,6 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install requests pyyaml beautifulsoup4
-
-    - name: Check if today is the update day (every 3 days)
-      run: |
-        today=$(date +%s)
-        start_date=$(date -d '2024-01-01' +%s)  # 設定一個開始日期
-        days_since_start=$(( (today - start_date) / 86400 ))
-        if [ $(( days_since_start % 3 )) -eq 0 ]; then
-          echo "Today is the update day."
-        else
-          echo "Today is not the update day, skipping."
-          exit 1
-      continue-on-error: true
 
     - name: Run Python script to update water volume
       run: |

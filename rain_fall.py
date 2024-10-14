@@ -129,17 +129,20 @@ def update_html(html_path, new_rainfall_data, previous_reservoir_data):
 
 # 主程式
 def main():
+    # 判斷今天是否是更新日（每三天更新一次）
+    today = datetime.date.today()
+    days_difference = (today - BASE_DATE).days
+    if days_difference % 3 != 0:
+        print("今天不是更新日，跳過更新。")
+        return
+
     # 從網頁抓取資料
     new_rainfall_data = [fetch_data() for _ in range(5)]  # 假設連續5天的資料
     if all(data is not None for data in new_rainfall_data):
-        # 從 HTML 中提取之前的降雨和水庫數據
         previous_rainfall_data, previous_reservoir_data = extract_previous_data(HTML_FILE_PATH)
         if previous_rainfall_data and previous_reservoir_data:
-            # 更新降雨資料
             previous_rainfall_data.pop(0)
             previous_rainfall_data.append(new_rainfall_data[-1])
-            
-            # 更新 HTML 檔案中的數據
             update_html(HTML_FILE_PATH, previous_rainfall_data, previous_reservoir_data)
             print("HTML file updated successfully!")
         else:
