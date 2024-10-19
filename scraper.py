@@ -7,7 +7,7 @@ import re
 # API 端點及參數
 url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0002-001'
 params = {
-    'Authorization': 'CWA-F6DA1B3E-FAEB-4876-8674-6F8B5F2F23A1',
+    'Authorization': 'CWA-AC09013D-FEAF-4F96-8122-DD18C2A01252',
     'limit': 100,
     'offset': 0,
     'format': 'JSON',
@@ -24,7 +24,6 @@ MAX_CAPACITY = 100.0
 # 發送 API 請求
 response = requests.get(url, params=params)
 data = response.json()
-
 # 取得 Past1hr 的降雨量
 precipitation_past1hr = data['records']['Station'][0]['RainfallElement']['Past1hr']['Precipitation']
 
