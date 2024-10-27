@@ -27,7 +27,10 @@ jobs:
 
     - name: Run Python script to update water volume
       run: |
-        python scraper.py
+        python rainfall_waterstorage_scraper.py
+        python onedaystorageupdate.py
+        python waterstorage.py
+        python rain_fall.py
 
     - name: Configure git
       run: |
