@@ -606,8 +606,13 @@
             "rainfall": 0.0
         },
         {
-            "update_time": "2024-10-28-04:44",
-            "temperature": 23.26,
+            "update_time": "2024-10-28-04:39",
+            "temperature": 23.29,
+            "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-10-28-05:00",
+            "temperature": 22.73,
             "rainfall": 0.0
         }
     ]
