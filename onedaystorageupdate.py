@@ -97,5 +97,4 @@ def main():
     print(f"儲水資料每小時更新成功，並儲存到 hourly_storage.json。")
 
 if __name__ == "__main__":
-    for i in range(72):
-        main()
+    main()

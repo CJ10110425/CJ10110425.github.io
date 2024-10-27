@@ -2,7 +2,7 @@ name: Update Rainfall and Deploy Hexo
 
 on:
   schedule:
-    - cron: '55 * * * *'
+    - cron: '55 * * * *'  # 每小時的第 55 分鐘運行
   workflow_dispatch:
 
 permissions:
@@ -15,6 +15,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+
+    - name: Set up timezone to Taiwan (Asia/Taipei)
+      run: |
+        sudo timedatectl set-timezone Asia/Taipei
+        echo "Time zone set to $(date)"
 
     - name: Set up Python
       uses: actions/setup-python@v3
