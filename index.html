@@ -216,12 +216,24 @@
       }
     </script>
 <style>
-      .text-center { 
-        text-align: center;
-        font-size: 2vw; /* 使用相對單位 vw 根據視窗寬度調整字體大小 */
-        margin-top: 10px;
-        line-height: 1.2; /* 調整行間距 */
-      }
+    .text-center p {
+      text-align: center;
+    font-size: 0.9vw; /* 根據視窗寬度設置字體大小 */
+    line-height: 1; /* 調整行間距 */
+  }
+
+  /* 在螢幕小於 600px 時，字體變小以適應移動設備 */
+  @media (max-width: 950px) {
+    .text-center p {
+      font-size: 2vw;
+    }
+  }
+  @media (min-width: 1050px) {
+    .text-center p {
+      font-size: 0.6vw;
+    }
+  }
+
 
       /* 藍色按鈕的樣式 */
       #toggleChartBtn {
@@ -312,10 +324,16 @@ More info: Deployment
 <div class="item-headline">
 <i class="fas fa-chart-line"></i><span>Rainfall and Reservoir Water Level</span>
 </div>
+
+
 <canvas id="rainfallChart" style="max-width: 100%; height: 300px;"></canvas> <!-- 折線圖 Canvas -->
+
 <div class="text-center">
-<p>The full capacity of ContiHydro underground reservoir is 1,000 liters of water.</p>
+<p>點擊上方藍色或黃色項目，可顯示或隱藏該數據線條。<br>Click the blue or yellow items above to show or hide the data lines.</p>
+
 <p>續水的地下化水庫滿載容量為1,000公升的水。</p>
+<p>The full capacity of ContiHydro underground reservoir is 1,000 liters of water.</p>
+
 <!-- 切換按鈕 -->
 </div>
 <button id="toggleChartBtn">切換長柄圖</button>
@@ -398,7 +416,6 @@ document.body.addEventListener('input', POWERMODE);
 
         // 預設為折線圖
         let currentChartType = 'line';
-
         // 初始化圖表
         let rainfallChart = new Chart(ctx, {
           type: currentChartType,
