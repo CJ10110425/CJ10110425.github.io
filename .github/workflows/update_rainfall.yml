@@ -34,6 +34,7 @@ jobs:
       run: |
         python rainfall_waterstorage_scraper.py
         python onedaystorageupdate.py
+        python update_hour.py
         python waterstorage.py
         python rain_fall.py
 
