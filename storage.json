@@ -1,18 +1,63 @@
 {
     "data": [
         {
-            "update_date": "2024-10-22",
+            "update_date": "2024-09-25",
             "water_storage": "39.9 %",
+            "rainfall": 1.0
+        },
+        {
+            "update_date": "2024-09-28",
+            "water_storage": "39.5 %",
+            "rainfall": 1.0
+        },
+        {
+            "update_date": "2024-10-01",
+            "water_storage": "39.05 %",
+            "rainfall": 1.0
+        },
+        {
+            "update_date": "2024-10-04",
+            "water_storage": "39.5 %",
+            "rainfall": 3.5
+        },
+        {
+            "update_date": "2024-10-07",
+            "water_storage": "38.05 %",
+            "rainfall": 5.0
+        },
+        {
+            "update_date": "2024-10-10",
+            "water_storage": "38.05 %",
+            "rainfall": 0.0
+        },
+        {
+            "update_date": "2024-10-13",
+            "water_storage": "38.05 %",
+            "rainfall": 0.0
+        },
+        {
+            "update_date": "2024-10-16",
+            "water_storage": "37.05 %",
+            "rainfall": 0.0
+        },
+        {
+            "update_date": "2024-10-19",
+            "water_storage": "42.05 %",
+            "rainfall": 0.0
+        },
+        {
+            "update_date": "2024-10-22",
+            "water_storage": "42.05 %",
             "rainfall": 0.0
         },
         {
             "update_date": "2024-10-25",
-            "water_storage": "37.5 %",
-            "rainfall": 0.0
+            "water_storage": "39.6 %",
+            "rainfall": 12.5
         },
         {
             "update_date": "2024-10-28",
-            "water_storage": "37.05 %",
+            "water_storage": "36.6 %",
             "rainfall": 0.0
         }
     ]

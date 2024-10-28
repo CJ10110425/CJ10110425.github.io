@@ -19,7 +19,7 @@ def load_latest_storage_data():
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
             # 取得最近三次更新的記錄
-            return data["data"][-3:]
+            return data["data"][-11:]
     return []
 
 # 更新 HTML 中的折線圖資料
@@ -90,11 +90,11 @@ def update_html(html_path, storage_data):
 def main():
     # 從 `storage.json` 中讀取最新三次儲水資料
     storage_data = load_latest_storage_data()
-    if len(storage_data) == 3:
+    if len(storage_data) == 11:
         # 更新 HTML 文件
         update_html(HTML_FILE_PATH, storage_data)
     else:
-        print("Insufficient data in storage.json. Need at least 3 records.")
+        print("Insufficient data in storage.json. Need at least 11 records.")
 
 
 if __name__ == "__main__":

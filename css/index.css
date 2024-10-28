@@ -2546,16 +2546,17 @@ h1.page-title + .tag-cloud-list {
   text-align: left;
 }
 #aside-content {
-  width: 46%;
+  width: 100%;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   #aside-content {
-    padding-left: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 100px) {
   #aside-content {
-    width: 100%;
+    width: 1%;
   }
 }
 #aside-content > .card-widget:first-child {

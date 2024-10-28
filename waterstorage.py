@@ -58,8 +58,8 @@ def update_storage_data(storage_data, today_str, new_storage_percentage, total_r
     })
 
     # 保留 `data` 中最近 3 次的更新記錄
-    if len(storage_data["data"]) > 3:
-        storage_data["data"] = storage_data["data"][-3:]
+    if len(storage_data["data"]) > 11:
+        storage_data["data"] = storage_data["data"][-11:]
 
     return storage_data
 
