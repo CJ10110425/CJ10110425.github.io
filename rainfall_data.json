@@ -979,6 +979,11 @@
             "update_time": "2024-10-31-13:59",
             "temperature": 26.62,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-10-31-15:00",
+            "temperature": 27.18,
+            "rainfall": 0.0
         }
     ]
 }
