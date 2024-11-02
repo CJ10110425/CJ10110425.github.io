@@ -1229,6 +1229,11 @@
             "update_time": "2024-11-02-17:59",
             "temperature": 23.29,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-11-02-19:00",
+            "temperature": 22.73,
+            "rainfall": 0.0
         }
     ]
 }
