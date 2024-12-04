@@ -4869,6 +4869,11 @@
             "update_time": "2024-12-04-10:20",
             "temperature": 22.39,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-12-04-11:26",
+            "temperature": 23.29,
+            "rainfall": 0.0
         }
     ]
 }
