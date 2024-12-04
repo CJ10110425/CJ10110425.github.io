@@ -4934,6 +4934,11 @@
             "update_time": "2024-12-04-23:00",
             "temperature": 19.4,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-12-05-00:01",
+            "temperature": 18.84,
+            "rainfall": 0.0
         }
     ]
 }
