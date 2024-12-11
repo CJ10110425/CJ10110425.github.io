@@ -1,11 +1,6 @@
 {
     "data": [
         {
-            "update_date": "2024-11-09",
-            "water_storage": "38.3 %",
-            "rainfall": 0.0
-        },
-        {
             "update_date": "2024-11-12",
             "water_storage": "37.85 %",
             "rainfall": 0.0
@@ -53,6 +48,11 @@
         {
             "update_date": "2024-12-09",
             "water_storage": "34.38 %",
+            "rainfall": 0.0
+        },
+        {
+            "update_date": "2024-12-12",
+            "water_storage": "34.02 %",
             "rainfall": 0.0
         }
     ]
