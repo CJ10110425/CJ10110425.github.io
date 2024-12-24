@@ -7254,6 +7254,11 @@
             "update_time": "2024-12-25-03:00",
             "temperature": 17.73,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-12-25-03:59",
+            "temperature": 17.73,
+            "rainfall": 0.0
         }
     ]
 }
