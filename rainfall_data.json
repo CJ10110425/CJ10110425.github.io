@@ -7599,6 +7599,11 @@
             "update_time": "2024-12-28-03:00",
             "temperature": 12.18,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2024-12-28-04:00",
+            "temperature": 12.18,
+            "rainfall": 0.0
         }
     ]
 }
