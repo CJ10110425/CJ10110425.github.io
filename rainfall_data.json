@@ -8474,6 +8474,11 @@
             "update_time": "2025-01-04-18:00",
             "temperature": 18.29,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-01-04-18:59",
+            "temperature": 17.73,
+            "rainfall": 0.0
         }
     ]
 }
