@@ -9004,6 +9004,11 @@
             "update_time": "2025-01-09-10:40",
             "temperature": 16.62,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-01-09-11:29",
+            "temperature": 16.07,
+            "rainfall": 0.0
         }
     ]
 }
