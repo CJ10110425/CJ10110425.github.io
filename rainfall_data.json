@@ -9734,6 +9734,11 @@
             "update_time": "2025-01-15-19:00",
             "temperature": 12.73,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-01-15-20:00",
+            "temperature": 12.18,
+            "rainfall": 0.0
         }
     ]
 }
