@@ -10984,6 +10984,11 @@
             "update_time": "2025-01-26-15:59",
             "temperature": 15.49,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-01-26-16:59",
+            "temperature": 15.03,
+            "rainfall": 0.5
         }
     ]
 }
