@@ -12174,6 +12174,11 @@
             "update_time": "2025-02-06-00:00",
             "temperature": 13.84,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-02-06-01:00",
+            "temperature": 13.84,
+            "rainfall": 0.0
         }
     ]
 }
