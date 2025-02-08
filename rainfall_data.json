@@ -12549,6 +12549,11 @@
             "update_time": "2025-02-09-06:00",
             "temperature": 9.4,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-02-09-07:00",
+            "temperature": 9.4,
+            "rainfall": 0.0
         }
     ]
 }
