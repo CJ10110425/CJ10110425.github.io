@@ -12484,6 +12484,11 @@
             "update_time": "2025-02-08-17:00",
             "temperature": 9.61,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-02-08-18:00",
+            "temperature": 8.84,
+            "rainfall": 0.0
         }
     ]
 }
