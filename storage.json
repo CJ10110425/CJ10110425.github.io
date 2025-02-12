@@ -1,11 +1,6 @@
 {
     "data": [
         {
-            "update_date": "2025-01-11",
-            "water_storage": "31.4 %",
-            "rainfall": 0.0
-        },
-        {
             "update_date": "2025-01-14",
             "water_storage": "31.14 %",
             "rainfall": 0.0
@@ -54,6 +49,11 @@
             "update_date": "2025-02-10",
             "water_storage": "29.01 %",
             "rainfall": 0.0
+        },
+        {
+            "update_date": "2025-02-13",
+            "water_storage": "29.01 %",
+            "rainfall": 22.0
         }
     ]
 }
