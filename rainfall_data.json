@@ -13009,6 +13009,11 @@
             "update_time": "2025-02-13-10:08",
             "temperature": 13.29,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-02-13-11:11",
+            "temperature": 14.4,
+            "rainfall": 0.0
         }
     ]
 }
