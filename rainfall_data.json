@@ -13659,6 +13659,11 @@
             "update_time": "2025-02-19-01:00",
             "temperature": 14.4,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-02-19-02:00",
+            "temperature": 14.96,
+            "rainfall": 0.0
         }
     ]
 }
