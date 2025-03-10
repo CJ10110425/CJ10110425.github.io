@@ -15904,6 +15904,11 @@
             "update_time": "2025-03-10-12:00",
             "temperature": 23.5,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-03-10-13:00",
+            "temperature": 23.79,
+            "rainfall": 0.0
         }
     ]
 }
