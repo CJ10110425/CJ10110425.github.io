@@ -16334,6 +16334,11 @@
             "update_time": "2025-03-14-04:59",
             "temperature": 17.18,
             "rainfall": 0.0
+        },
+        {
+            "update_time": "2025-03-14-06:00",
+            "temperature": 16.62,
+            "rainfall": 0.0
         }
     ]
 }
